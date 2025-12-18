@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TimeMint.tools - Free Online Tools</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; text-align:center;}
+    header { background:#4CAF50; color:white; padding:30px 0;}
+    h1 { margin:0; }
+    .tools { display:flex; flex-wrap: wrap; justify-content:center; padding:20px;}
+    .tool { background:white; margin:10px; padding:20px; border-radius:8px; width:200px; box-shadow:0 0 5px rgba(0,0,0,0.2);}
+    footer { background:#333; color:white; padding:20px 0; margin-top:20px;}
+    a { color:#4CAF50; text-decoration:none;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TimeMint.tools</h1>
+  <p>Fast, simple, and free online tools for everyday use</p>
+</header>
+
+<section class="tools">
+  <div class="tool">
+    <h3>Digital Clock</h3>
+    <p id="clock">Loading...</p>
+    <script>
+      function updateClock(){
+        const now = new Date();
+        document.getElementById('clock').innerText = now.toLocaleTimeString();
+      }
+      setInterval(updateClock, 1000);
+      updateClock();
+    </script>
+  </div>
+  <div class="tool">
+    <h3>Countdown Timer</h3>
+    <p>Coming Soon 🚀</p>
+  </div>
+  <div class="tool">
+    <h3>Stopwatch</h3>
+    <p>Coming Soon 🚀</p>
+  </div>
+  <div class="tool">
+    <h3>Pomodoro Timer</h3>
+    <p>Coming Soon 🚀</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 TimeMint.tools — All rights reserved</p>
+</footer>
+
+</body>
+</html>
